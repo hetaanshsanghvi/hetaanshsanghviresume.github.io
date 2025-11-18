@@ -1,0 +1,193 @@
+
+        /* --- Global Styles --- */
+        body {
+            font-family: 'Roboto', Arial, sans-serif; /* Modern, clean font */
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px; /* More padding for a cleaner look */
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f7f9fc; /* Light background for a soft feel */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
+            border-radius: 8px; /* Slightly rounded overall document */
+        }
+
+        a {
+            color: #007bff; /* Vibrant blue for links */
+            text-decoration: none;
+            transition: color 0.3s ease; /* Smooth transition for hover */
+        }
+
+        a:hover {
+            color: #0056b3; /* Darker blue on hover */
+            text-decoration: underline;
+        }
+
+        /* --- Header Section --- */
+        .header {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #007bff; /* Bold, colored line for emphasis */
+            overflow: auto;
+            display: flex; /* Use flex for main title and role */
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        .header .main-name {
+            font-size: 2.2em; /* Larger name */
+            font-weight: 700;
+            color: #222;
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+
+        .header .title { /* Electronics & Computer Science Engineer */
+            font-size: 1.2em;
+            font-weight: 500;
+            color: #555;
+            margin: 0;
+            text-align: right;
+            flex-shrink: 0; /* Prevent from shrinking */
+        }
+
+        .contact-info {
+            font-size: 0.95em;
+            color: #666;
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%; /* Ensure it spans full width */
+        }
+
+        .contact-info .item {
+            margin-right: 20px;
+            white-space: nowrap; /* Keep items on one line */
+        }
+        
+        .email-info {
+            margin-right: auto; /* Pushes email to the far right */
+        }
+
+        /* --- Section Formatting --- */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #007bff; /* Use accent color for titles */
+            border-bottom: 2px solid #ccc; /* Lighter border for titles */
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            margin-top: 30px; /* More space before sections */
+            letter-spacing: 0.8px;
+        }
+
+        /* --- Education Section --- */
+        .education-item {
+            margin-bottom: 20px;
+            padding: 10px 0;
+            border-left: 3px solid #e0e0e0; /* Subtle vertical line */
+            padding-left: 15px;
+            position: relative;
+        }
+        
+        /* Small circle for timeline effect */
+        .education-item::before {
+            content: '';
+            position: absolute;
+            left: -8.5px; /* Adjust to align with the border-left */
+            top: 15px;
+            width: 12px;
+            height: 12px;
+            background-color: #007bff;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 2px #007bff;
+        }
+
+        .education-item .date {
+            font-weight: 500;
+            font-size: 0.9em;
+            color: #777;
+            float: right;
+            margin-top: 2px;
+        }
+
+        .education-item .item-title {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #444;
+            margin: 0 0 5px 0;
+        }
+        
+        .education-item p {
+            margin: 0 0 3px 0;
+            font-size: 0.95em;
+            color: #555;
+        }
+        
+        .education-item p.cgpa {
+            font-weight: 500;
+            color: #444;
+        }
+
+        /* --- Skills Tags Section --- */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* More space between tags */
+            margin-top: 10px;
+        }
+
+        .skill-tag {
+            background-color: #e2f0ff; /* Light blue background for tags */
+            padding: 8px 15px;
+            border-radius: 20px; /* Pill-shaped tags */
+            font-size: 0.9em;
+            color: #0056b3; /* Darker blue text for tags */
+            font-weight: 500;
+            border: 1px solid #a8d7ff; /* Subtle border */
+            white-space: nowrap;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+        
+        .skill-tag:hover {
+            transform: translateY(-2px); /* Slight lift on hover */
+            background-color: #d1e7ff;
+        }
+
+        /* --- Certifications and Projects --- */
+        .section > p, .section li {
+            font-size: 0.98em;
+            color: #444;
+        }
+
+        .section ol {
+            padding-left: 25px; /* More indent for ordered list */
+            margin-top: 10px;
+        }
+
+        .project-item {
+            margin-bottom: 20px;
+        }
+
+        .project-item strong {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+            display: block; /* Make strong take its own line */
+            font-size: 1.05em;
+        }
+        
+        .project-item p {
+            margin-top: 5px; /* Adjust spacing */
+            margin-bottom: 0;
+        }
